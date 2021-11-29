@@ -1,0 +1,54 @@
+
+Button Matrix
+
+Row 1   PC6   5
+Row 2   PE6   7
+Row 3   PF4   A3
+Row 4   PF5   A2 - Rotary Buttons
+
+Col 1   PB5   9
+Col 2   PB6   10
+Col 3   PD4   4
+Col 4   PD7   6 
+
+Rotatry encoders
+Rot1A   B1  15  PCINT1
+Rot2A   B2  16  PCINT2
+Rot3A   B3  14  PCINT3
+Rot4A   B4  8   PCINT4
+
+Rot1B   PD0   3
+Rot2B   PD1   2
+Rot3B   PD2   RXI
+Rot4B   PD3   TXO
+
+Sliders
+A0 - ADC7
+A1 - ADC6
+
+
+Cols held high (internal pullup), Diodes point to rows
+https://aws1.discourse-cdn.com/arduino/original/4X/4/4/1/4419e7590121c6f75965906e9ee7d9d94bd361db.png
+
+        Col 1   Col 2   Col 3   Col 4
+            |       |       |       |
+          /-+     /-+     /-+     /-+
+          S |     S |     S |     S |
+          D |     D |     D |     D |
+Row 1 ----+-------+-------+-------+
+            |       |       |       |
+          /-+     /-+     /-+     /-+
+          S |     S |     S |     S |
+          D |     D |     D |     D |
+Row 2 ----+-------+-------+-------+
+            |       |       |       |
+          /-+     /-+     /-+     /-+
+          S |     S |     S |     S |
+          D |     D |     D |     D |
+Row 3 ----+-------+-------+-------+
+            |       |       |       |
+          /-+     /-+     /-+     /-+
+          S       S       S       S
+          D       D       D       D
+Row 4 ----+-------+-------+-------+
+
